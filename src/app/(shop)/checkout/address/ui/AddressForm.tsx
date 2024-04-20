@@ -62,7 +62,7 @@ export const AddressForm = ({ countries, userStoredAddress }: Props) => {
         if( address.firstName ){
             reset(address)
         }
-    }, [])
+    }, [address, reset])
 
   return (
     <form onSubmit={ handleSubmit(onSubmit) } className="grid grid-cols-1 gap-2 sm:gap-5 sm:grid-cols-2">
